@@ -144,7 +144,6 @@ View Book:
 ---
 ##  Author
 Pranesh K
-Java & Web Application Developer
 ---
 ##  License
 This project is created for educational and academic purposes.

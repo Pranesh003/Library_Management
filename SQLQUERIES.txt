@@ -1,0 +1,24 @@
+SQL Queries:
+//Author table
+create table AUTHOR_TBL(
+Author_code Number(5) primary key,
+Author_name Varchar2(20) NOT NULL,
+Contact_no Number(10)
+);
+Insert into AUTHOR_TBL(Author_code,Author_name,Contact_no) VALUES(1,'Ramesh',9874561230);
+Insert into AUTHOR_TBL(Author_code,Author_name,Contact_no) VALUES(2,'Raju',9874561231);
+Insert into AUTHOR_TBL(Author_code,Author_name,Contact_no) VALUES(3,'kumar',9874561232);
+
+//Book Table
+create table BOOK_TBL(
+ISBN Varchar2(10) primary key,
+Book_title Varchar2(20) NOT NULL,
+Book_type Char(1),
+Author_code Number(5) not null,
+Book_cost  Number(8,2) not null,
+CONSTRAINT fk_author FOREIGN KEY (Author_code)
+    REFERENCES Author_TBL (Author_code)
+);
+//Book_type => should accept only 'G'(general) or 'T'(technical)
+//Author_code => the values used here should be present in the author_tbl
+

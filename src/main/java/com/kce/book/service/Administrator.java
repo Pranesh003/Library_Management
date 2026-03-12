@@ -1,6 +1,4 @@
 package com.kce.book.service;
-
-
 import com.kce.book.bean.BookBean;
 
 import com.kce.book.dao.BookDAO;

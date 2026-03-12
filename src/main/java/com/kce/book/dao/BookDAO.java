@@ -7,7 +7,6 @@ import java.sql.SQLException;
 
 import com.kce.book.bean.BookBean;
 import com.kce.book.util.Dbutil;
-
 public class BookDAO {
 	Connection con=Dbutil.getDBConnection();
 	public int createBook(BookBean bookBean)

@@ -1,5 +1,6 @@
 package com.kce.book.bean;
 
+
 public class AuthorBean {
 	private int authorCode;
 	private String authorName;

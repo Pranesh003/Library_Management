@@ -1,5 +1,6 @@
 package com.kce.book.bean;
 
+
 public class BookBean {
 	private String isbn;
 	private String bookName;
